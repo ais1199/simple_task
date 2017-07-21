@@ -16,6 +16,8 @@ public:
     ~Widget();
 
 private:
+    void NP();
+    void upd();
     Ui::Widget *ui;
 };
 
