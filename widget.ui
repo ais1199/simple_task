@@ -51,7 +51,7 @@
     <bool>true</bool>
    </property>
    <property name="rowCount">
-    <number>1</number>
+    <number>0</number>
    </property>
    <attribute name="horizontalHeaderCascadingSectionResizes">
     <bool>false</bool>
@@ -62,7 +62,6 @@
    <attribute name="verticalHeaderDefaultSectionSize">
     <number>25</number>
    </attribute>
-   <row/>
    <column>
     <property name="text">
      <string>user ID</string>
@@ -83,9 +82,9 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>12</y>
+     <y>20</y>
      <width>47</width>
-     <height>21</height>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
@@ -96,13 +95,39 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>13</y>
+     <y>20</y>
      <width>291</width>
-     <height>20</height>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
     <string>No Problems</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>3</y>
+     <width>47</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>File: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fn">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>3</y>
+     <width>301</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>No File</string>
    </property>
   </widget>
  </widget>
