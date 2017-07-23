@@ -9,10 +9,9 @@
 #include <QPushButton>
 #include <QTableWidgetItem>
 /*
- * проверить грамматику
  * сделать таблицу не редактируемой
- * продумать не читаемые строки (не читать испорченный файл)
- * продумать errortipe4
+ * errortipe4 не ошибка. формат фаила другой. нечитаемых строк нет, юзеры вообще не построкам записаны.
+ * есть бракованый фаил. вот с ним надо подумать
  * Дописать ТЗ и ТО
  */
 //функция создания виджета
@@ -26,6 +25,7 @@ Widget::Widget(QWidget *parent) :
     setMinimumSize(450,300);
     setWindowTitle(QString("FReader"));
     //коннект кнопки и функции открытия
+    ui->tab->setEditTriggers(QAbstractItemView::NoEditTriggers);
     connect(ui->open,&QPushButton::clicked,this,&Widget::open);
     //задаем другие начальные параметры (вектора строк дляобновления и строку состояния на экране)
     slist.clear();
